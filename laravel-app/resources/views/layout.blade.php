@@ -75,10 +75,10 @@
                   <a class="nav-link" href="{{url('news/create')}}">CADASTRAR NOTÍCIAS</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page"  href="http://localhost/news">EXIBIR NOTÍCIAS</a>
+                  <a class="nav-link active" aria-current="page"  href="{{url('news')}}">EXIBIR NOTÍCIAS</a>
                </li>
             </ul>
-            <form class="bd-search position-relative me-auto" method="post" action="{{ route('news.search') }}">
+            <form class="bd-search position-relative me-auto" method="get" action="{{url('news')}}">
                <div class="input-group">
                   <input class="form-control im-curve" name="search" type="text" placeholder="Procurar" aria-label="Procurar">
                   <button class="btn btn-outline-secondary bt-curve" type="submit" id="button-addon2"><i class="fas fa-search"></i></button>

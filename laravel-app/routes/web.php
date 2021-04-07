@@ -19,4 +19,3 @@ Route::get('/', function () {
 });
 
 Route::resource('news', NewsController::class);
-Route::post('news/search', [NewsController::class, 'search'])->name('news.search');

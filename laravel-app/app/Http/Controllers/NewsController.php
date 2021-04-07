@@ -12,27 +12,21 @@ class NewsController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $new = News::all();
+        $search = $request->input('search');
+        if(isset($search)){
+            $new = News::where('title', 'LIKE', "%$search%")->get();
+        }else{
+            $new = News::all();
+        }
+        
         return view('index', compact('new'));
     }
 
-    /**
-     * Display a listing of the resource.
-     *
-     ** @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function search(Request $request)
-    {
-        $search = $request->input('search');
-        $new = News::where('title', 'LIKE', "%$search%")->get();;
-        return view('index', compact('new'));
-    }
-    
     /**
      * Show the form for creating a new resource.
      *
