@@ -1,4 +1,4 @@
-# Desafio Investidor 10
+# Desafio investidor 10
 
 Foi montado um ambiente em docker compose com PHP7, MSQL e o NGINX
 
@@ -10,7 +10,9 @@ git clone https://github.com/thiagohome2/investidor10.git
 
 cd investidor10/laravel-app
 
-docker-compose up -d
+composer install //composer previamente instalado
+
+docker-compose up -d //docker instalado
 
 docker ps
 
