@@ -1,4 +1,4 @@
-# Desafio investidor 10
+# Desafio Investidor 10
 
 Foi montado um ambiente em docker compose com PHP7, MSQL e o NGINX
 
