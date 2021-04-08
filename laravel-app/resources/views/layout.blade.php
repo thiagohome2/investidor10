@@ -75,7 +75,7 @@
                   <a class="nav-link" href="{{url('news/create')}}">CADASTRAR NOTÍCIAS</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page"  href="{{url('news')}}">EXIBIR NOTÍCIAS</a>
+                  <a class="nav-link" href="{{url('news')}}">EXIBIR NOTÍCIAS</a>
                </li>
             </ul>
             <form class="bd-search position-relative me-auto" method="get" action="{{url('news')}}">

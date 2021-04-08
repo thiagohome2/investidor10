@@ -13,7 +13,7 @@
 
 <div class="card push-top">
   <div class="card-header">
-    <h5>Adicionar Notícia</h5>
+    <h5>Cadastrar Notícia</h5>
   </div>
 
   <div class="card-body">
